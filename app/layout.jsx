@@ -21,11 +21,11 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`h-fit antialiased`}
+      className={`min-h-screen max-h-fit antialiased`}
     >
-      <body className=" h-fit lg:h-fit flex flex-col lg:flex-row items-center ">
+      <body className="min-h-screen max-h-fit  flex flex-col lg:flex-row items-center ">
         <Navbar />
-        <div className="min-h-screen h-fit lg:h-screen flex flex-col justify-between items-center w-full">
+        <div className="min-h-screen lg:min-h-screen flex flex-col justify-between items-center w-full">
         {children}
         <Footer/>
         </div>

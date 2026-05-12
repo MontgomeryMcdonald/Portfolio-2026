@@ -13,7 +13,7 @@ const Page = () => {
   const [step, setSteps] = useState("Design")
 
   return (
-    <div className="align-center justify-center items-center w-full h-fit lg:h-full">
+    <div className="align-center justify-center items-center w-full h-fit lg:h-screen">
       <div className="bg-[#083117] border-8 border-[#00ee00] m-[.5vh] p-4 w-full flex justify-center h-fit lg:h-[65%] text-4xl">
         <p>{processSteps[step]}</p>
       </div>

@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const Navbar = () => {
   return (
-    <div className="grid grid-cols-2 grid-rows-5 w-screen lg:w-[20vw] h-screen lg:sticky lg:top-0">
+    <div className="grid grid-cols-2 grid-rows-5 w-screen lg:w-[20vw] h-screen lg:sticky lg:bottom-0 lg:top-0"> 
         <Link href="/" className="hover:bg-[#083117] border-8 border-[#00ee00] m-[.5vh] p-4 text-4xl text-center justify-center items-center flex row-span-2">Home</Link>
         <Link href="/about" className="hover:bg-[#083117] border-8 border-[#00ee00] m-[.5vh] p-4 text-4xl text-center justify-center items-center flex">About Me</Link>
         <Link href="/projects" className="hover:bg-[#083117] border-8 border-[#00ee00] m-[.5vh] p-4 text-4xl text-center justify-center items-center flex">My Projects</Link>

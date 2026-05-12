@@ -3,7 +3,7 @@ const page = () => {
 
   return (
     <div className="flex flex-col align-center justify-center items-center w-full h-full">
-      <div className="bg-[#083117] border-8 border-[#00ee00] m-[.5vh] p-4 text-6xl w-full flex justify-center">Hello! My Name Is Montgomery Mcdonald</div>
+      <div className="bg-[#083117] border-8 border-[#00ee00] m-[.5vh] p-4 text-6xl w-full flex justify-center">Montgomery Mcdonald: Full Stack Engineer</div>
       <div className="w-full h-full flex flex-col lg:flex-row justify-between">
       <div className="bg-[#083117] border-8 border-[#00ee00] m-[.5vh] p-4 text-lg w-screen lg:w-[25vw]">
         <p>
