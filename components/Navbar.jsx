@@ -9,7 +9,7 @@ const Navbar = () => {
         <Link href="/guarantees" className="hover:bg-[#083117] border-8 border-[#00ee00] m-[.5vh] p-4 text-4xl text-center justify-center items-center flex col-span-2">My Guarantees</Link>
         <Link href="/process" className="hover:bg-[#083117] border-8 border-[#00ee00] m-[.5vh] p-4 text-4xl text-center justify-center items-center flex">My Process</Link>
         <Link href="/contact" className="hover:bg-[#083117] border-8 border-[#00ee00] m-[.5vh] p-4 text-4xl text-center justify-center items-center flex row-span-2">Contact Me</Link>
-        <Link href="/blog" className="hover:bg-[#083117] border-8 border-[#00ee00] m-[.5vh] p-4 text-4xl text-center justify-center items-center flex">View Blog</Link>
+        <Link href="/login" className="hover:bg-[#083117] border-8 border-[#00ee00] m-[.5vh] p-4 text-4xl text-center justify-center items-center flex">Log In</Link>
     </div>
   )
 }
