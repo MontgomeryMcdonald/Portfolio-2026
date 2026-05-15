@@ -5,8 +5,8 @@ const page = () => {
 
   return (
     <div className="flex flex-col align-center justify-center items-center w-full h-full">
-      <div className="bg-[#294c37] border-8 border-[#008827] p-4 text-6xl w-full flex justify-center typewriter">
-        <h1 className=" text-3xl lg:text-6xl p-3">
+      <div className="bg-[#294c37] border-8 border-[#008827] text-lg w-full flex justify-center typewriter">
+        <h1 className=" text-3xl lg:text-5xl p-3">
         Montgomery McDonald: Full Stack Engineer
         </h1>
         </div>
