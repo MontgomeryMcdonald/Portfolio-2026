@@ -8,7 +8,7 @@ const Project = ({project}) => {
   let image
   return (
     <motion.div transition={{duration: 3}} animate={{y:['100vh', 0]}} className="bg-[#294c37] border-8 border-[#008827] m-[.5vh] p-4 my-8 w-full flex flex-col h-fit ">
-      <h1 className="text-6xl">{project.name}</h1>
+      <h1 className="text-5xl">{project.name}</h1>
       <div className="flex flex-col lg:flex-row">
         {project.image != "" ? <Image
             src={project.image}

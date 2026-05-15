@@ -6,11 +6,11 @@ const page = () => {
   return (
     <div className="flex flex-col align-center justify-center items-center w-full h-full">
       <div className="bg-[#294c37] border-8 border-[#008827] p-4 text-6xl w-full flex justify-center typewriter">
-        <h1 className=" text-3xl lg:text-6xl">
+        <h1 className=" text-3xl lg:text-6xl p-3">
         Montgomery McDonald: Full Stack Engineer
         </h1>
         </div>
-      <div className="w-full h-full flex flex-col lg:flex-row justify-between">
+      <div className="w-full h-fit flex flex-col lg:flex-row justify-between">
       <motion.div transition={{duration: 1}} animate={{x: ['100vw', 0]}} className="bg-[#294c37] border-8 border-[#008827] m-[.5vh] p-4 text-2xl w-screen lg:w-[25vw]">
         <p>
           I have been coding since 2022, in a multitude of languages. I have skills in Java, Front-End Website Design, Back-End Website Design, Video Game Development and Modding, Systems Administration and Installing and Maintaining IoT Devices. Below are a list of my certifications and skills.
