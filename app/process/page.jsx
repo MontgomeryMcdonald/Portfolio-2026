@@ -1,5 +1,6 @@
 "use client"
 import {useState, useEffect} from 'react'
+import {motion} from 'motion/react'
 
 const Page = () => {
     const processSteps = {
@@ -14,16 +15,16 @@ const Page = () => {
 
   return (
     <div className="align-center justify-center items-center w-full h-fit lg:h-screen">
-      <div className="bg-[#083117] border-8 border-[#00ee00] m-[.5vh] p-4 w-full flex justify-center h-fit lg:h-[65%] text-4xl">
+      <motion.div transition={{duration: 1}} animate={{x: ['-100vw', 0]}} className="bg-[#294c37] border-8 border-[#008827] m-[.5vh] p-4 w-full flex justify-center h-fit lg:h-[65%] text-4xl">
         <p>{processSteps[step]}</p>
-      </div>
-      <div className="grid lg:grid-cols-4 lg:grid-rows-2 w-full grid-cols-2 grid-rows-4 h-[34%]">
-        <button onClick={() => setSteps("Design")} className=" border-8 border-[#00ee00] m-[.5vh] p-4 text-2xl lg:text-4xl text-center justify-center items-center flex lg:row-span-2 hover:bg-[#083117]"><p>Design</p></button>
-        <button onClick={() => setSteps("Development")} className="border-8 border-[#00ee00] m-[.5vh] p-4 text-2xl lg:text-4xl text-center justify-center items-center flex lg:col-span-2 hover:bg-[#083117]"><p>Development</p></button>
-        <button onClick={() => setSteps("Feedback")} className="border-8 border-[#00ee00] m-[.5vh] p-4 text-2xl lg:text-4xl text-center justify-center items-center flex hover:bg-[#083117]"><p>Feedback</p></button>
-        <button onClick={() => setSteps("FinalPolish")} className="border-8 border-[#00ee00] m-[.5vh] p-4 text-2xl lg:text-4xl text-center justify-center items-center flex hover:bg-[#083117]"><p>Final Polish</p></button>
-        <button onClick={() => setSteps("ShippingAndMaintenance")} className="border-8 border-[#00ee00] m-[.5vh] p-4 text-2xl lg:text-4xl text-center justify-center items-center flex hover:bg-[#083117] lg:col-span-2"><p>Shipping and Maintenance</p></button>
-      </div>
+      </motion.div>
+      <motion.div transition={{duration: 1}} animate={{x: ['100vw', 0]}}className="grid lg:grid-cols-4 lg:grid-rows-2 w-full grid-cols-2 grid-rows-4 h-[34%]">
+        <button onClick={() => setSteps("Design")} className=" border-8 border-[#008827] m-[.5vh] p-4 text-2xl lg:text-4xl text-center justify-center items-center flex lg:row-span-2 hover:bg-[#294c37]"><p>Design</p></button>
+        <button onClick={() => setSteps("Development")} className="border-8 border-[#008827] m-[.5vh] p-4 text-2xl lg:text-4xl text-center justify-center items-center flex lg:col-span-2 hover:bg-[#294c37]"><p>Development</p></button>
+        <button onClick={() => setSteps("Feedback")} className="border-8 border-[#008827] m-[.5vh] p-4 text-2xl lg:text-4xl text-center justify-center items-center flex hover:bg-[#294c37]"><p>Feedback</p></button>
+        <button onClick={() => setSteps("FinalPolish")} className="border-8 border-[#008827] m-[.5vh] p-4 text-2xl lg:text-4xl text-center justify-center items-center flex hover:bg-[#294c37]"><p>Final Polish</p></button>
+        <button onClick={() => setSteps("ShippingAndMaintenance")} className="border-8 border-[#008827] m-[.5vh] p-4 text-2xl lg:text-4xl text-center justify-center items-center flex hover:bg-[#294c37] lg:col-span-2"><p>Shipping and Maintenance</p></button>
+      </motion.div>
     </div>
   )
 }

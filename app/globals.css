@@ -2,19 +2,28 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #021433;
 }
+
+
+@font-face {
+  font-family: "Science";
+  src: url('../fonts/ScienceGothic-VariableFont_CTRS\,slnt\,wdth\,wght.ttf');
+  font-weight: 300;
+  font-style: normal; 
+}
+
+
+
+
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #021f33;
     --foreground: #ededed;
   }
 }
@@ -22,12 +31,35 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Science", Arial, sans-serif;
 }
 
-
+/* 
 .nav{
-  position: sticky;
-  left: 0px;
-  bottom: 0px;
+} */
+
+    @media (width >= 64rem /* 1024px */) {
+      
+        .typewriter h1{
+          overflow-x: hidden;
+    overflow-y: visible;
+    border-right: .15em solid #008827;
+    white-space: nowrap;
+    margin: 0 .5vh;
+    letter-spacing: normal;
+    animation:
+    typing 3s steps(40, end),
+      blink-caret .75s step-end infinite;
+    }
+    
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #008827; }
+  }
 }

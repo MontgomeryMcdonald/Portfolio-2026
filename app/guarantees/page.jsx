@@ -1,5 +1,6 @@
 "use client"
 import {useState, useEffect} from 'react'
+import {motion} from 'motion/react'
 
 const Page = () => {
     const Guarantees = {
@@ -24,17 +25,17 @@ const Page = () => {
 
   return (
     <div className="align-center justify-center items-center w-full h-fit lg:h-screen">
-      <div className="bg-[#083117] border-8 border-[#00ee00] m-[.5vh] p-4 w-full flex justify-center h-fit lg:h-[65%] text-4xl">
+      <motion.div transition={{duration: 1}} animate={{x: ['100vw', 0]}} className="bg-[#294c37] border-8 border-[#008827] m-[.5vh] p-4 w-full flex justify-center h-fit lg:h-[65%] text-4xl">
         <p>{Guarantees[guarantee]}</p>
-      </div>
-      <div className="grid lg:grid-cols-4 lg:grid-rows-2 w-full grid-cols-2 grid-rows-4 h-[34%]">
-        <button onClick={() => setGuarantee("Punctuality")} className=" border-8 border-[#00ee00] m-[.5vh] p-4 text-2xl lg:text-4xl text-center justify-center items-center flex lg:col-span-2 hover:bg-[#083117]"><p>Punctuality</p></button>
-        <button onClick={() => setGuarantee("Skill")} className="border-8 border-[#00ee00] m-[.5vh] p-4 text-2xl lg:text-4xl text-center justify-center items-center flex lg:row-span-2 hover:bg-[#083117]"><p>Skill</p></button>
-        <button onClick={() => setGuarantee("Creativity")} className="border-8 border-[#00ee00] m-[.5vh] p-4 text-2xl lg:text-4xl text-center justify-center items-center flex hover:bg-[#083117]"><p>Creativity</p></button>
-        <button onClick={() => setGuarantee("Professionalism")} className="border-8 border-[#00ee00] m-[.5vh] p-4 text-2xl lg:text-4xl text-center justify-center items-center flex hover:bg-[#083117]"><p>Professionalism</p></button>
-        <button onClick={() => setGuarantee("Quality")} className="border-8 border-[#00ee00] m-[.5vh] p-4 text-2xl lg:text-4xl text-center justify-center items-center flex hover:bg-[#083117]"><p>Quality</p></button>
-        <button onClick={() => setGuarantee("Commitment")} className="border-8 border-[#00ee00] m-[.5vh] p-4 text-2xl lg:text-4xl text-center justify-center items-center flex hover:bg-[#083117]"><p>Commitment</p></button>
-      </div>
+      </motion.div>
+      <motion.div transition={{duration: 1}} animate={{x: ['-100vw', 0]}} className="grid lg:grid-cols-4 lg:grid-rows-2 w-full grid-cols-2 grid-rows-4 h-[34%]">
+        <button onClick={() => setGuarantee("Punctuality")} className=" border-8 border-[#008827] m-[.5vh] p-4 text-2xl lg:text-4xl text-center justify-center items-center flex lg:col-span-2 hover:bg-[#294c37]"><p>Punctuality</p></button>
+        <button onClick={() => setGuarantee("Skill")} className="border-8 border-[#008827] m-[.5vh] p-4 text-2xl lg:text-4xl text-center justify-center items-center flex lg:row-span-2 hover:bg-[#294c37]"><p>Skill</p></button>
+        <button onClick={() => setGuarantee("Creativity")} className="border-8 border-[#008827] m-[.5vh] p-4 text-2xl lg:text-4xl text-center justify-center items-center flex hover:bg-[#294c37]"><p>Creativity</p></button>
+        <button onClick={() => setGuarantee("Professionalism")} className="border-8 border-[#008827] m-[.5vh] p-4 text-2xl lg:text-4xl text-center justify-center items-center flex hover:bg-[#294c37]"><p>Professionalism</p></button>
+        <button onClick={() => setGuarantee("Quality")} className="border-8 border-[#008827] m-[.5vh] p-4 text-2xl lg:text-4xl text-center justify-center items-center flex hover:bg-[#294c37]"><p>Quality</p></button>
+        <button onClick={() => setGuarantee("Commitment")} className="border-8 border-[#008827] m-[.5vh] p-4 text-2xl lg:text-4xl text-center justify-center items-center flex hover:bg-[#294c37]"><p>Commitment</p></button>
+      </motion.div>
     </div>
   )
 }
